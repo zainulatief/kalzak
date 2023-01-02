@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/img/donation.png" rel="icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <title>Kalkulator Zakat</title>
+
+  <!-- Fontawesome -->
+  <link type="text/css" href="./vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
+
+  <!-- Pixel CSS -->
+  <link type="text/css" href="./css/neumorphism.css" rel="stylesheet" />
+</head>
+
+<body>
+  <section class="section section bg-soft pb-sm-0 overflow-hidden z-2">
+    <div class="container z-2">
+      <div class="row justify-content-center text-center pt-6">
+        <div class="col-lg-8 col-xl-8">
+          <h1 class="display-1 mb-3">Kalkulator Zakat</h1>
+          <p class="lead px-md-6 mb-0">
+            Ngitung zakat nggak pake pusing
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-sm">
+    <div class="container">
+      <div class="row justify-content-md-around">
+        <div class="col-lg-4 col-md-6">
+          <div class="card bg-primary shadow-soft border-light p-4">
+            <h4 class="title">Nisab</h4>
+            <p class="description">
+              Batas minimum harta wajib zakat. Nisab Zakat Penghasilan
+              setara dengan 85 gram emas
+            </p>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Rp</span>
+              <input type="text" class="form-control text-end" placeholder="Harga emas per gram"
+                aria-label="Harga emas per gram" aria-describedby="basic-addon1" />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+          <div class="card bg-primary shadow-soft border-light p-4">
+            <h4 class="title">Pemasukan</h4>
+            <p class="description">
+              Harta yang diterima, baik pemasukan rutin/pokok maupun
+              pemasukan tambahan lainnya
+            </p>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Rp</span>
+              <input type="text" class="form-control text-end" placeholder="Pemasukan pokok"
+                aria-label="Pemasukan pokok" aria-describedby="basic-addon1" />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Rp</span>
+              <input type="text" class="form-control text-end" placeholder="Lainnya (bonus, THR, hadiah)"
+                aria-label="Lainnya (bonus, THR, hadiah)" aria-describedby="basic-addon1" />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+          <div class="card bg-primary shadow-soft border-light p-4">
+            <h4 class="title">Pengeluaran</h4>
+            <p class="description">
+              Harta yang dikeluarkan untuk memenuhi kebutuhan pokok maupun
+              membayar tanggungan
+            </p>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Rp</span>
+              <input type="text" class="form-control text-end" placeholder="Pengeluaran pokok"
+                aria-label="Pengeluaran pokok" aria-describedby="basic-addon1" />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Rp</span>
+              <input type="text" class="form-control text-end" placeholder="Lainnya (cicilan, hutang)"
+                aria-label="Lainnya (cicilan, hutang)" aria-describedby="basic-addon1" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section bg-primary pt-0 section-lg">
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col">
+
+          <div class="alert alert-success shadow-soft mb-4 mb-lg-5" role="alert">
+            <span class="alert-inner--icon icon-lg"><span class="far fa-thumbs-up"></span></span>
+            <span class="alert-heading">Well done!</span>
+            <h3>
+              وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ ۚ وَمَا تُقَدِّمُوا لِأَنْفُسِكُمْ مِنْ خَيْرٍ تَجِدُوهُ عِنْدَ
+              اللَّهِ ۗ إِنَّ اللَّهَ بِمَا تَعْمَلُونَ بَصِيرٌ
+            </h3>
+            <p class="description">
+              [2:110] Dan dirikanlah shalat dan tunaikanlah zakat. Dan kebaikan
+              apa saja yang kamu usahakan bagi dirimu, tentu kamu akan mendapat
+              pahala nya pada sisi Allah. Sesungguhnya Alah Maha Melihat apa-apa
+              yang kamu kerjakan.
+            </p>
+            <hr>
+            <h2 id="jmlzakat" class="text-center">Hitung zakat</h2>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</body>
+
+</html>
